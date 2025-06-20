@@ -22,6 +22,10 @@ run_and_display_command "uname -a"
 run_and_display_command "find / -perm -u=s -type f 2>/dev/null"
 run_and_display_command "env"
 run_and_display_command "cat ~/.bashrc"
+run_and_display_command "grep 'CRON' /var/log/syslog"
+run_and_display_command "ps -aux | grep pass"
+run_and_display_command "ps -aux | grep OS"
+run_and_display_command "sudo tcpdump -i lo -A | grep 'pass'"
 
 # Notify user that the audit is complete
 echo "Audit complete. Results displayed above."
