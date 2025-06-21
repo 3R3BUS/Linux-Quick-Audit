@@ -28,6 +28,7 @@ run_and_display_command "ps -aux | grep OS"
 run_and_display_command "sudo tcpdump -i lo -A | grep 'pass'"
 run_and_display_command "echo \"/etc/passwd write check: \"; ls -la /etc/passwd | grep 'rw- 1'" # echo "root2:9dHemuf/59kvw:0:0:root:/root:/bin/bash" >> /etc/passwd
 run_and_display_command "/usr/sbin/getcap -r / 2>/dev/null"
+run_and_display_command "ip a"
 
 # Notify user that the audit is complete
 echo "Audit complete. Results displayed above."
